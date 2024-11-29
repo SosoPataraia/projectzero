@@ -1,3 +1,6 @@
+ruby '3.2.5'
+
+
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -59,6 +62,6 @@ group :development, :test do
    gem 'sqlite3'
 end
 group :production do
-   gem 'pg'
+   gem 'pg', '>=1.1', '<2.0'
 end
 
